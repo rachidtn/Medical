@@ -1,0 +1,29 @@
+YE\MyPlatformBundle\Entity\medecin:
+    type: entity
+    table: null
+    repositoryClass: YE\MyPlatformBundle\Repository\medecinRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nom:
+            type: string
+            length: 255
+        prenom:
+            type: string
+            length: 255
+        email:
+            type: string
+            length: 255
+        specialite:
+            type: string
+            length: 255
+        numero:
+            type: integer
+        image:
+            type: string  
+            length: 255  
+    lifecycleCallbacks: {  }

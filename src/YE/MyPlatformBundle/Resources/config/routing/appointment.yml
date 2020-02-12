@@ -1,0 +1,27 @@
+appointment_index:
+    path:     /Appointment
+    defaults: { _controller: "YEMyPlatformBundle:Appointment:index" }
+    methods:  GET
+
+appointment_show:
+    path:     /{id}/show
+    defaults: { _controller: "YEMyPlatformBundle:Appointment:show" }
+    methods:  GET
+
+appointment_new:
+    path:     /new
+    defaults: { _controller: "YEMyPlatformBundle:Appointment:new" }
+    methods:  [GET, POST]
+
+appointment_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "YEMyPlatformBundle:Appointment:edit" }
+    methods:  [GET, POST]
+
+appointment_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "YEMyPlatformBundle:Appointment:delete" }
+    methods:  DELETE
+add_app:
+    path:     /appoinment
+    defaults: { _controller: YEMyPlatformBundle:Appointment:add}

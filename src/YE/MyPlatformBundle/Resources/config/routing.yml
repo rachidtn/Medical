@@ -1,0 +1,18 @@
+ye_my_platform_medecin:
+    resource: "@YEMyPlatformBundle/Resources/config/routing/medecin.yml"
+    prefix:   /medecin
+Appointment:
+    resource: "@YEMyPlatformBundle/Resources/config/routing/appointment.yml"
+    prefix:   /Appointment
+
+ye_my_platform_homepage:
+    path:     /index
+    defaults: { _controller: YEMyPlatformBundle:Default:index }
+
+add_app:
+    path:     /new
+    defaults: { _controller: YEMyPlatformBundle:Appointment:add }
+
+show_app:
+    path:     /show
+    defaults: { _controller: YEMyPlatformBundle:Appointment:show }

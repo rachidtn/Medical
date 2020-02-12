@@ -1,0 +1,24 @@
+medecin_index:
+    path:     /
+    defaults: { _controller: "YEMyPlatformBundle:medecin:index" }
+    methods:  GET
+
+medecin_show:
+    path:     /show/{id}
+    defaults: { _controller: "YEMyPlatformBundle:medecin:show" }
+    methods:  GET
+
+medecin_new:
+    path:     /new
+    defaults: { _controller: "YEMyPlatformBundle:medecin:new" }
+    methods:  [GET, POST]
+
+medecin_edit:
+    path:     /edit/{id}
+    defaults: { _controller: "YEMyPlatformBundle:medecin:edit" }
+    methods:  [GET, POST]
+
+medecin_delete:
+    path:     /delete/{id}
+    defaults: { _controller: "YEMyPlatformBundle:medecin:delete" }
+    methods:  DELETE

@@ -1,0 +1,40 @@
+YE\MyPlatformBundle\Entity\Appointment:
+    type: entity
+    table: null
+    repositoryClass: YE\MyPlatformBundle\Repository\AppointmentRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nom:
+            type: string
+            length: 255
+            column: Nom
+        prenom:
+            type: string
+            length: 255
+            column: Prenom
+        cIN:
+            type: string
+            length: 255
+            column: CIN
+        service:
+            type: string
+            length: 255
+            column: Service
+        tel:
+            type: string
+            length: 255
+            column: Tel
+        description:
+            type: string
+            length: 255
+            column: Description
+        date:
+            type: string
+            length: 255
+            column: date
+    lifecycleCallbacks: {  }

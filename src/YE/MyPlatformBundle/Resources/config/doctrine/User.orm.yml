@@ -1,0 +1,11 @@
+YE\MyPlatformBundle\Entity\User:
+    type: entity
+    table: null
+    repositoryClass: YE\MyPlatformBundle\Repository\UserRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    lifecycleCallbacks: {  }

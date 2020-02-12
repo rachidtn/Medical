@@ -1,0 +1,28 @@
+ye_my_platform:
+    resource: "@YEMyPlatformBundle/Resources/config/routing.yml"
+    prefix:   /home
+
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+    
+easy_admin_bundle:
+    resource: "@EasyAdminBundle/Controller/"
+    type: annotation
+    prefix: /easyadmin
+ye_my_platform_homepage:
+    path:     /index
+    defaults: { _controller: YEMyPlatformBundle:Default:index }
+
+sigup:
+    path:     /signup
+    defaults: { _controller: YEMyPlatformBundle:Default:signup }
+
+add:
+    path:     /add
+    defaults: { _controller: YEMyPlatformBundle:Appointment:new}
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"

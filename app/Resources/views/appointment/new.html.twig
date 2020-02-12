@@ -1,0 +1,22 @@
+{% extends 'appointment.html.twig' %}
+
+{% block body %}
+    <h1>Appointment creation</h1>
+    {{ form_start(form) }}
+    <table>
+        <tr> <td>First Name:</td><td>  {{ form_widget(form.prenom) }}</td></tr>
+        <tr> <td>Last Name: </td><td> {{ form_widget(form.nom) }}</td></tr>
+        <tr><td></td><td><input type="submit" value="Appointment" /></td></tr>
+
+    </table>
+
+
+    {{ form_end(form) }}
+
+
+    <ul>
+        <li>
+            <a href="{{ path('appointment_show') }}">Back to the list</a>
+        </li>
+    </ul>
+{% endblock %}

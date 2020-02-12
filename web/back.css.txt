@@ -1,0 +1,2 @@
+.col-md-4 ftco-animate {
+  background-image:  url("template/images/image_4.jpg"), 
